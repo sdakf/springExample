@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/sendText" method="post">
+    <input name="textValue" type="text">
+    <button>Slij</button>
+</form>
+
+Pozdrawiam:
+<h1 th:text="${greetingMessage}"></h1>
+
+<ul th:each="text : ${listOfValues}">
+    <li th:text="${text}">
+    </li>
+</ul>
+
+
+</body>
+</html>
